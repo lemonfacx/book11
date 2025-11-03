@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Light and Shadow</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    .book {
+      display: flex;
+      width: 100vw;
+      height: 90vh;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+    .page {
+      flex: 0 0 100%;
+      max-width: 400px;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      position: relative;
+      scroll-snap-align: start;
+      margin: 0 10px;
+    }
+    .ar-link {
+      position: fixed;
+      bottom: calc(16px + env(safe-area-inset-bottom));
+      right: 16px;
+      padding: 10px 16px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/1.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/2.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/3.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/4.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/5.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/6.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/7.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/8.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/9.png');">
+    </div>
+    <div class="page" style="background-image: url('https://raw.githubusercontent.com/lemonfacx/book11/main/10.png');">
+      <a class="ar-link" href="https://3rdjvl.csb.app/" target="_blank">Start AR</a>
+    </div>
+  </div>
+</body>
+</html>
